@@ -737,3 +737,52 @@ min-height: 300px;
     background-color: blue !important;
     min-height: 500px !important;
 }
+
+/* =========================
+   JOB REQUEST FORM
+========================= */
+
+.job-form {
+    max-width: 700px;
+    margin-top: 40px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    background: var(--white);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: 2px solid var(--red);
+    border-color: var(--red);
+}
+
+.job-form .primary-button {
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
