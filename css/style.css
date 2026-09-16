@@ -602,6 +602,7 @@ MOBILE
 
 .job-form {
     grid-template-columns: 1fr;
+    width:100%;
     padding: 25px 20px;
     gap: 22px;
 }
@@ -614,6 +615,10 @@ MOBILE
     grid-column: auto;
 }
 
+.form-group select {
+    appearance: auto;
+    min-height: 55px;
+}
 .site-header {
 position: sticky;
 top: 0;
@@ -878,7 +883,7 @@ min-height: 300px;
     color: var(--dark);
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 25px 30px;
 }
 
