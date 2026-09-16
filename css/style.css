@@ -943,3 +943,70 @@ min-height: 300px;
     font-size: 1rem;
     font-weight: 700;
 }
+
+/* =========================
+   MOBILE JOB FORM FIX
+========================= */
+
+@media (max-width: 768px) {
+
+    .job-form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        padding: 25px 20px;
+        gap: 0;
+    }
+
+    .form-group,
+    .form-group-full {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .form-group label {
+        text-align: left;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    .form-group textarea {
+        min-height: 180px;
+    }
+
+    .job-form .primary-button {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .form-group label {
+        font-size: 0.95rem;
+    }
+
+    .booking h2 {
+        font-size: 2rem;
+    }
+
+    .job-form {
+        padding: 22px 16px;
+    }
+
+}
+
+.job-form {
+    grid-template-columns: 1fr 1fr;
+}
