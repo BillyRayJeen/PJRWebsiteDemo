@@ -487,6 +487,10 @@
 
 
                 <form class="job-form">
+                        id="job-form"
+                        action="#"
+                        method="POST"
+						>
 
                     <div class="form-group">
 
@@ -634,7 +638,47 @@
                         </select>
 
                     </div>
+						
+                        	<div class="form-group form-group-full">
 
+						    <label for="address">
+      						  Job Address or Postcode
+						    </label>
+
+    							<input
+        							type="text"
+        							id="address"
+        							name="address"
+        							placeholder="Where is the work required?"
+        							autocomplete="street-address"
+       							 	required
+    							>
+
+					</div>
+                    
+                    <div class="form-group">
+
+    <label for="contact-method">
+        Preferred Contact Method
+    </label>
+
+    <select id="contact-method" name="contact_method" required>
+
+        <option value="">
+            Select contact method
+        </option>
+
+        <option value="phone">
+            Phone
+        </option>
+
+        <option value="email">
+            Email
+        </option>
+
+    </select>
+
+</div>
 
                     <button
                         type="submit"
