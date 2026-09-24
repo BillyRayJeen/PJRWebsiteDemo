@@ -720,7 +720,7 @@ section p {
     .main-navigation {
         display: none;
 
-        position: absolute;
+        position: relative;
         top: 100%;
         left: 0;
 
