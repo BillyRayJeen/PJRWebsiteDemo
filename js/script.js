@@ -16,7 +16,9 @@ navigationLinks.forEach(link => {
         navigation.classList.remove("active");
         menuToggle.setAttribute("aria-expanded", "false");
     });
-    const jobForm = document.querySelector("#job-form");
+});
+
+const jobForm = document.querySelector("#job-form");
 
 jobForm.addEventListener("submit", (event) => {
     const phoneInput = document.querySelector("#phone");
