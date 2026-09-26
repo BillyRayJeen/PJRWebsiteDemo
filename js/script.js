@@ -20,9 +20,7 @@ navigationLinks.forEach(link => {
 
 const jobForm = document.querySelector("#job-form");
 
-jobForm.addEventListener("submit", async (event) => {
-    event.preventDefault();
-
+jobForm.addEventListener("submit", (event) => {
     const phoneInput = document.querySelector("#phone");
     const phone = phoneInput.value.trim();
 
@@ -33,6 +31,8 @@ jobForm.addEventListener("submit", async (event) => {
     const ukPhonePattern = /^(?:0\d{9,10}|\+44\d{9,10})$/;
 
     if (!ukPhonePattern.test(cleanedPhone)) {
+        event.preventDefault();
+
         phoneInput.setCustomValidity(
             "Please enter a valid UK phone number."
         );
@@ -43,17 +43,4 @@ jobForm.addEventListener("submit", async (event) => {
     }
 
     phoneInput.setCustomValidity("");
-
-    const formData = new FormData(jobForm);
-
-    const response = await fetch(jobForm.action, {
-        method: "POST",
-        body: formData
-    });
-
-    if (response.ok) {
-        window.location.href = "thank-you.html";
-    } else {
-        alert("There was a problem submitting your request. Please try again.");
-    }
 });
