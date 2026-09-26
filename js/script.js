@@ -18,16 +18,15 @@ navigationLinks.forEach(link => {
     });
 });
 
+
 const jobForm = document.querySelector("#job-form");
 
 jobForm.addEventListener("submit", (event) => {
     const phoneInput = document.querySelector("#phone");
     const phone = phoneInput.value.trim();
 
-    // Remove spaces, brackets and hyphens
     const cleanedPhone = phone.replace(/[\s()-]/g, "");
 
-    // Accept common UK phone formats
     const ukPhonePattern = /^(?:0\d{9,10}|\+44\d{9,10})$/;
 
     if (!ukPhonePattern.test(cleanedPhone)) {
